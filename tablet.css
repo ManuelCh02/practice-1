@@ -1,0 +1,51 @@
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: grid;
+    grid-auto-columns: minmax(290px, auto);
+    grid-template-rows: repeat(2, 275px) 225px;
+}
+
+.container__daniel-testimonial {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+}
+
+.container__jonathan-testimonial {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+.container__jeanette-testimonial {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.container__patrick-testimonial {
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+}
+
+.container__kira-testimonial {
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+}
+
+.container__daniel-testimonia--position {
+    position: absolute;
+    top: 0;
+    left: calc(100% - 180px);
+    z-index: 2;
+}
+
+/* Box-shadow */
+.container__daniel-testimonial,
+.container__jonathan-testimonial,
+.container__jeanette-testimonial,
+.container__patrick-testimonial,
+.container__kira-testimonial {
+    box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.2);
+}

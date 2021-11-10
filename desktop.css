@@ -1,0 +1,15 @@
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 290px);
+    grid-template-rows: repeat(2, 275px);
+}
+
+.container__kira-testimonial {
+    grid-column: 4 / 5;
+    grid-row: 1 / 3;
+}

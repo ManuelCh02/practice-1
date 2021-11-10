@@ -1,0 +1,255 @@
+:root {
+    --moderate-violet: hsl(263, 55%, 52%);
+    --very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --very-dark-blackis-blue: hsl(219, 29%, 14%);
+    --white: #fff;
+
+    --light-gray: hsl(0, 0%, 81%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+main {
+    padding: 50px 20px;
+}
+
+body {
+    background-color: var(--light-grayish-blue);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: repeat(auto);
+    gap: 20px;
+}
+
+/*** Daniel ***/
+.container__daniel-testimonial {
+    position: relative;
+    padding: 30px 20px;
+    width: 100%;
+    background-color: var(--moderate-violet);
+    border-radius: 8px;
+    z-index: 1;
+}
+
+.daniel-testimonial__name {
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.daniel-testimonial__name span {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    background-image: url('./assets/img/image-daniel.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    border: 2px solid var(--moderate-violet);
+}
+
+.name__description--principal-name,
+.name__description--principal-text,
+.name__patrick-testimonial--name {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--white);
+}
+
+.name__description--verified,
+.name__patrick-testimonial--verified {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--white);
+    opacity: 50%;
+}
+
+.container__daniel-testimonial--first-text {
+    position: relative;
+    margin: 15px 0;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--white);
+    z-index: 3;
+}
+
+.container__daniel-testimonial--second-text {
+    font-size: 1.3rem;
+    color: var(--white);
+    opacity: 70%;
+}
+
+.container__daniel-testimonia--position {
+    position: absolute;
+    top: 0;
+    left: calc(100% - 124px);
+    z-index: 2;
+}
+
+
+/*** Jonathan Testitmonial ***/
+.container__jonathan-testimonial {
+    padding: 30px 20px;
+    width: 100%;
+    background-color: var(--very-dark-grayish-blue);
+    border-radius: 8px;
+}
+
+.jonathan-testimonial__name span {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    background-image: url('./assets/img/image-jonathan.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+
+.jonathan-testimonial__name {
+    width: 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container__jonathan-testimonial--principal-text,
+.container__patrick-testimonial--first-text {
+    margin: 15px 0;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--white);
+}
+
+.container__jonathan-testimonial--second-text,
+.container__patricl-testimonial--second-text {
+    font-size: 1.3rem;
+    color: var(--white);
+    opacity: 70%;
+}
+
+
+
+/*** Jeanette Testimonial ***/
+.container__jeanette-testimonial {
+    padding: 30px 20px;
+    width: 100%;
+    background-color: var(--white);
+    border-radius: 8px;
+}
+
+.jeanette-testimonial__name {
+    width: 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.jeanette-testimonial__name span {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    background-image: url('./assets/img/image-jeanette.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+
+.name__jeannette-description--name,
+.name__kira-testimonial--name {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--very-dark-grayish-blue);
+}
+
+.name__jeanette-description-verified,
+.name__kira-testimonial--verified {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--very-dark-grayish-blue);
+    opacity: 50%;
+}
+
+.container__jeanette-testimonial--first-text,
+.container__kira-testimonial--first-text {
+    margin: 15px 0;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--very-dark-grayish-blue);
+}
+
+.container__jeanette-testimonial--second-text,
+.container__kira-testimonial--second-text {
+    font-size: 1.3rem;
+    color: var(--very-dark-grayish-blue);
+    opacity: 70%;
+}
+
+
+/*** Patrick Testitmonial ***/
+.container__patrick-testimonial {
+    padding: 30px 20px;
+    width: 100%;
+    background-color: var(--very-dark-blackis-blue);
+    border-radius: 8px;
+}
+
+.patrick-testimonial__name {
+    width: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.patrick-testimonial__name span {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    background-image: url('./assets/img/image-patrick.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+
+
+/*** Kira testimonial ***/
+.container__kira-testimonial {
+    padding: 30px 20px;
+    width: 100%;
+    background-color: var(--white);
+    border-radius: 8px;
+}
+
+.kira-testimonial__name {
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.kira-testimonial__name span {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    background-image: url('./assets/img/image-kira.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
